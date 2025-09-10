@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@fatcherjs/utils-shared':
-    specifier: ^3.0.0-alpha-11
-    version: 3.0.0-alpha-4
-
 devDependencies:
   '@fansy/eslint-config':
     specifier: ^1.4.2
@@ -409,10 +404,6 @@ packages:
     dependencies:
       prettier: 2.8.8
     dev: true
-
-  /@fatcherjs/utils-shared@3.0.0-alpha-4:
-    resolution: {integrity: sha512-lDxcxq/o3mYYDd6UtpnShXzbEvPFZbeRiMeXBO1NnC2I4xgEacq5PJXUggD88AXGmbbdwhRCUWjDT1pOqek7Jg==}
-    dev: false
 
   /@humanwhocodes/config-array@0.13.0:
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
