@@ -8,7 +8,10 @@ export default defineConfig({
       name: 'FatcherMiddlewareParameter',
       formats: ['cjs', 'umd', 'es'],
       entry: ['src/index.ts'],
-      fileName: format => `index.${format === 'cjs' ? '' : format === 'es' ? 'esm' : 'min'}.js`,
+      fileName: (format, entry) =>
+        [entry, format === 'cjs' ? '' : format === 'es' ? 'esm' : 'min', 'js']
+          .filter(Boolean)
+          .join('.'),
     },
   },
 });
