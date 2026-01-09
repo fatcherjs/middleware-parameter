@@ -32,7 +32,19 @@
 ### CDN
 
 ```html
+<script src="https://cdn.jsdelivr.net/npm/fatcher/dist/fatcher.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fatcherjs/middleware-parameter/dist/index.min.js"></script>
+
+<script>
+  Fatcher.fatcher('url', {
+    middlewares: [FatcherMiddlewareParameter],
+    params: {
+      foo: 'bar',
+    },
+  }).then(response => {
+    console.log(response);
+  });
+</script>
 ```
 
 ## Usage
